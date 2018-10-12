@@ -1,0 +1,91 @@
+﻿---@class class
+---@field ctor fun(...)
+local _class = {}
+function PrintTable( tbl, level, filteDefault)
+    if tbl == nil then
+        return;
+    end
+    local msg = ""
+    filteDefault = filteDefault or true --默认过滤关键字（DeleteMe, _class_type）
+    level = level or 1
+    local indent_str = ""
+    for i = 1, level do
+        indent_str = indent_str .. "  "
+    end
+
+    for k, v in pairs(tbl) do
+        if filteDefault then
+            if k ~= "_class_type" and k ~= "DeleteMe" then
+                local item_str = string.format("%s%s = %s", indent_str .. " ", tostring(k), tostring(v))
+                if type(v) == "table" then
+                    PrintTable(v, level + 1)
+                end
+            end
+        else
+            local item_str = string.format("%s%s = %s", indent_str .. " ", tostring(k), tostring(v))
+            if type(v) == "table" then
+                PrintTable(v, level + 1)
+            end
+        end
+    end
+end
+
+---@return class
+function InheritClass(super)
+    ---@type class
+    local class_type = {}
+    class_type.ctor = false
+    class_type.super = super
+    PrintTable(super);
+    ---@return class
+    class_type.New = function(...)
+        local obj = {}
+        obj.super = {}
+        do
+            local create
+            create = function(c, ...)
+                if c.super then
+                    create(c.super, ...)
+                end
+                if c.ctor then
+                    c.ctor(obj, ...)
+                end
+            end
+            create(class_type, ...)
+        end
+        setmetatable(obj, { __index = function(t, k)
+
+            local ret = _class[class_type][k]
+            if class_type.super then
+                local base = _class[class_type.super][k]
+                if base then
+                    obj.super[k] = base
+                end
+            end
+            return ret
+        end
+        })
+        obj.EventDelegates = {};
+        return obj
+    end
+    local vtbl = {}
+    _class[class_type] = vtbl
+
+    setmetatable(class_type, { __newindex = function(t, k, v)
+
+        vtbl[k] = v
+    end
+    })
+
+    if super then
+        setmetatable(vtbl, { __index = function(t, k)
+            local ret = _class[super][k]
+
+            vtbl[k] = ret
+            return ret
+        end
+        })
+    end
+
+    return class_type
+end

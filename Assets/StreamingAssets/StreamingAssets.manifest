@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3639656356
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ykframwork.bytes
+      Dependencies: {}

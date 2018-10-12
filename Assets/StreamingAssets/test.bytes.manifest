@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3925227424
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0c22ab49bfb3874b8f8a80962376b765
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e80aa3433ff86e8d4626bce72c9e2fe3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB/test/testpre.prefab
+Dependencies: []

@@ -1,0 +1,111 @@
+{
+    "groups": [
+        {
+            "sceneName": "test",
+            "keys": [
+                "testpre",
+                "BasePack@atlas0",
+                "BasePack@sprites",
+                "LoadingScenePack@atlas0",
+                "LoadingScenePack@atlas_jkp82",
+                "LoadingScenePack@atlas_jkp87",
+                "LoadingScenePack@atlas_kwlw12",
+                "BasePack",
+                "LoadingScenePack",
+                "LoadingScenePack@sprites"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/testpre.prefab",
+            "name": "testpre",
+            "type": ".prefab",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/BasePack@atlas0.png",
+            "name": "BasePack@atlas0",
+            "type": ".png",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/BasePack@sprites.bytes",
+            "name": "BasePack@sprites",
+            "type": ".bytes",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/LoadingScenePack@atlas0.png",
+            "name": "LoadingScenePack@atlas0",
+            "type": ".png",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/LoadingScenePack@atlas_jkp82.png",
+            "name": "LoadingScenePack@atlas_jkp82",
+            "type": ".png",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/LoadingScenePack@atlas_jkp87.png",
+            "name": "LoadingScenePack@atlas_jkp87",
+            "type": ".png",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/LoadingScenePack@atlas_kwlw12.png",
+            "name": "LoadingScenePack@atlas_kwlw12",
+            "type": ".png",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        },
+        {
+            "ABName": "basepacklayerdata",
+            "path": "Assets/AB/test/basepacklayerdata/BasePack.bytes",
+            "name": "BasePack",
+            "type": ".bytes",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": true
+        },
+        {
+            "ABName": "loadingscenelayerdata",
+            "path": "Assets/AB/test/loadingscenelayerdata/LoadingScenePack.bytes",
+            "name": "LoadingScenePack",
+            "type": ".bytes",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": true
+        },
+        {
+            "ABName": "test",
+            "path": "Assets/AB/test/LoadingScenePack@sprites.bytes",
+            "name": "LoadingScenePack@sprites",
+            "type": ".bytes",
+            "isKeepInMemory": true,
+            "isResourcesPath": false,
+            "isFairyGuiPack": false
+        }
+    ]
+}

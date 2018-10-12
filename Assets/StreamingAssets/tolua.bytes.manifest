@@ -1,0 +1,83 @@
+ManifestFileVersion: 0
+CRC: 3169407168
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b2052c55c307b124d686e618013aee68
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB/Lua/tolua/socket_mbox.txt
+- Assets/AB/Lua/tolua/typeof.txt
+- Assets/AB/Lua/tolua/misc_utf8.txt
+- Assets/AB/Lua/tolua/lpeg_re.txt
+- Assets/AB/Lua/tolua/unityengine_plane.txt
+- Assets/AB/Lua/tolua/unityengine_vector4.txt
+- Assets/AB/Lua/tolua/cjson_util.txt
+- Assets/AB/Lua/tolua/list.txt
+- Assets/AB/Lua/tolua/protobuf_encoder.txt
+- Assets/AB/Lua/tolua/jit_p.txt
+- Assets/AB/Lua/tolua/socket_smtp.txt
+- Assets/AB/Lua/tolua/jit_vmdef.txt
+- Assets/AB/Lua/tolua/slot.txt
+- Assets/AB/Lua/tolua/jit_bc.txt
+- Assets/AB/Lua/tolua/unityengine_quaternion.txt
+- Assets/AB/Lua/tolua/system_timer.txt
+- Assets/AB/Lua/tolua/unityengine_color.txt
+- Assets/AB/Lua/tolua/jit_dis_arm64.txt
+- Assets/AB/Lua/tolua/sproto_sprotoparser.txt
+- Assets/AB/Lua/tolua/system_coroutine.txt
+- Assets/AB/Lua/tolua/socket_tp.txt
+- Assets/AB/Lua/tolua/jit_dis_x64.txt
+- Assets/AB/Lua/tolua/unityengine_mathf.txt
+- Assets/AB/Lua/tolua/socket_ftp.txt
+- Assets/AB/Lua/tolua/unityengine_ray.txt
+- Assets/AB/Lua/tolua/event.txt
+- Assets/AB/Lua/tolua/jit_dis_x86.txt
+- Assets/AB/Lua/tolua/unityengine_raycasthit.txt
+- Assets/AB/Lua/tolua/protobuf_containers.txt
+- Assets/AB/Lua/tolua/protobuf_text_format.txt
+- Assets/AB/Lua/tolua/unityengine_layermask.txt
+- Assets/AB/Lua/tolua/socket.txt
+- Assets/AB/Lua/tolua/unityengine_profiler.txt
+- Assets/AB/Lua/tolua/system_valuetype.txt
+- Assets/AB/Lua/tolua/jit_dis_mipsel.txt
+- Assets/AB/Lua/tolua/misc_functions.txt
+- Assets/AB/Lua/tolua/misc_strict.txt
+- Assets/AB/Lua/tolua/jit_dis_arm64be.txt
+- Assets/AB/Lua/tolua/socket_url.txt
+- Assets/AB/Lua/tolua/jit_dump.txt
+- Assets/AB/Lua/tolua/jit_dis_mips.txt
+- Assets/AB/Lua/tolua/jit_dis_mips64el.txt
+- Assets/AB/Lua/tolua/protobuf_listener.txt
+- Assets/AB/Lua/tolua/unityengine_time.txt
+- Assets/AB/Lua/tolua/socket_headers.txt
+- Assets/AB/Lua/tolua/system_reflection_bindingflags.txt
+- Assets/AB/Lua/tolua/protobuf_type_checkers.txt
+- Assets/AB/Lua/tolua/ltn12.txt
+- Assets/AB/Lua/tolua/protobuf_wire_format.txt
+- Assets/AB/Lua/tolua/unityengine_vector2.txt
+- Assets/AB/Lua/tolua/jit_v.txt
+- Assets/AB/Lua/tolua/unityengine_touch.txt
+- Assets/AB/Lua/tolua/jit_zone.txt
+- Assets/AB/Lua/tolua/unityengine_bounds.txt
+- Assets/AB/Lua/tolua/jit_dis_ppc.txt
+- Assets/AB/Lua/tolua/jit_dis_mips64.txt
+- Assets/AB/Lua/tolua/protobuf_descriptor.txt
+- Assets/AB/Lua/tolua/socket_http.txt
+- Assets/AB/Lua/tolua/sproto_sproto.txt
+- Assets/AB/Lua/tolua/sproto_sprotoloader.txt
+- Assets/AB/Lua/tolua/protobuf_protobuf.txt
+- Assets/AB/Lua/tolua/jit_dis_arm.txt
+- Assets/AB/Lua/tolua/protobuf_decoder.txt
+- Assets/AB/Lua/tolua/unityengine_vector3.txt
+- Assets/AB/Lua/tolua/jit_bcsave.txt
+- Assets/AB/Lua/tolua/sproto_print_r.txt
+- Assets/AB/Lua/tolua/tolua.txt
+- Assets/AB/Lua/tolua/mime.txt
+Dependencies: []

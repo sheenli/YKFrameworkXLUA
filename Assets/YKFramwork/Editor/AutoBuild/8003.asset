@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743737da729d1408d9fe2900ffb58ae9, type: 3}
+  m_Name: 8003
+  m_EditorClassIdentifier: 
+  CopyDirectoryPath: CopyToXcode
+  addStringKeyToPlist:
+  - Key: NSMicrophoneUsageDescription
+    value: "\u4F7F\u7528\u9EA6\u514B\u98CE,\u7528\u4E8E\u8BED\u97F3\u804A\u5929"
+  - Key: NSLocationWhenInUseUsageDescription
+    value: "App\u9700\u8981\u60A8\u7684\u540C\u610F,\u7528\u4E8E\u57CE\u5E02\u5B9A\u4F4D"
+  - Key: NSLocationUsageDescription
+    value: "App\u9700\u8981\u60A8\u7684\u540C\u610F,\u624D\u80FD\u8BBF\u95EE\u4F4D\u7F6E\uFF0C\u7528\u4E8E\u57CE\u5E02\u5B9A\u4F4D"
+  - Key: NSLocationAlwaysUsageDescription
+    value: "App\u9700\u8981\u60A8\u7684\u540C\u610F,\u624D\u80FD\u59CB\u7EC8\u8BBF\u95EE\u4F4D\u7F6E\uFF0C\u7528\u4E8E\u57CE\u5E02\u5B9A\u4F4D"
+  URLIdentifierList:
+  - name: weixin
+    URLSchemes:
+    - wxd9794b410b380783
+  - name: 
+    URLSchemes:
+    - sqmjjumpapp
+  FrameworkList:
+  - CoreTelephony.framework:weak
+  - AudioToolbox.framework:weak
+  - VideoToolbox.framework:weak
+  - SystemConfiguration.framework
+  - Security.framework
+  - CFNetwork.framework
+  - CoreText.framework
+  - JavaScriptCore.framework
+  - QuartzCore.framework
+  - CoreGraphics.framework
+  - UIKit.framework
+  - Foundation.framework
+  - CoreMotion.framework
+  - UserNotifications.framework
+  AddCodeList:
+  - FileName: UnityAppController.mm
+    StartAddCode: "#include \"WXSDKInterface.h\"\x03\x03\x03\x03//"
+    addCodes: []
+    replaceCode:
+    - oldCode: '_window         = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];'
+      newCode: "CGRect winSize = [UIScreen mainScreen].bounds;\r\n    if (winSize.size.width/winSize.size.height
+        > 2) {\r\n        winSize.size.width -= 64;\r\n        winSize.origin.x =
+        32;\r\n    }\r\n    if(winSize.size.height/winSize.size.width>2){\r\n        winSize.size.height
+        -=64;\r\n        winSize.origin.y = 32;\r\n    }\n_window = [[UIWindow alloc]
+        initWithFrame:winSize];"
+  - FileName: WXSDKInterface.h
+    StartAddCode: 
+    addCodes: []
+    replaceCode:
+    - oldCode: '#WXAPPID'
+      newCode: wxd9794b410b380783
+    - oldCode: '#JUMPALIPAYSCHEME'
+      newCode: sqmjjumpapp
+  - FileName: UI/UnityViewControllerBaseiOS.mm
+    StartAddCode: 
+    addCodes:
+    - addFlag: '@implementation UnityViewControllerBase'
+      AddCode: "- (UIRectEdge)preferredScreenEdgesDeferringSystemGestures\r\n{\r\n
+        \   return UIRectEdgeAll;\r\n}"
+    replaceCode: []
+  LibList:
+  - libresolv.tbd
+  - libz.tbd
+  - libsqlite3.0.tbd
+  - libc++.tbd
+  - libstdc++.6.0.9.tbd
+  LinkerFlagArray:
+  - -ObjC
+  FrameworkSearchPathArray:
+  - $(inherited)
+  - $(PROJECT_DIR)/Frameworks
+  CompilerFlagsSetList: []
+  ApplicationQueriesSchemes:
+  - weixin
+  EnableBitCode: 0
+  EnableATS: 1
+  EnableStatusBar: 1
+  NeedToDeleteLaunchiImagesKey: 0

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3186470824
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c815310522592253a4f5f84d5f7d699b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB/Lua/ykframwork/core_windowbase.txt
+- Assets/AB/Lua/ykframwork/main.txt
+- Assets/AB/Lua/ykframwork/fgui_fairygui.txt
+- Assets/AB/Lua/ykframwork/core_class.txt
+- Assets/AB/Lua/ykframwork/core_scenebaselua.txt
+- Assets/AB/Lua/ykframwork/core_yk.txt
+- Assets/AB/Lua/ykframwork/core_netmgr.txt
+Dependencies: []
