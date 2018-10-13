@@ -1,0 +1,5 @@
+/Library/
+/Temp/
+/Assets/AB/Lua
+*.csproj
+*.sln
