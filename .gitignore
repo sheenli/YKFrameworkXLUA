@@ -1,5 +1,6 @@
 /Library/
 /Temp/
+/.vs/
 /Assets/AB/Lua
 *.csproj
 *.sln

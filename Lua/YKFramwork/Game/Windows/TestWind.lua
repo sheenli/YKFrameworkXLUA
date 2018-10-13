@@ -20,8 +20,7 @@ end
 
 function this:OnInit()
     local test = self.Objs.TestLogin ---@type test
-    test:test()
-
+    test.Lua:test()
 end
 
 function this:OnShown(param)

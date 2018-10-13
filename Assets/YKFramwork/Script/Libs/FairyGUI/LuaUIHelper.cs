@@ -52,14 +52,14 @@ namespace FairyGUI
 
     public class GLuaComponent : GComponent
     {
-        LuaTable _peerTable;
+        public LuaTable Lua;
 
         [XLua.BlackList]
         public override void ConstructFromXML(XML xml)
         {
             base.ConstructFromXML(xml);
 
-            _peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
             
         }
 
@@ -67,113 +67,113 @@ namespace FairyGUI
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
 
 	public class GLuaLabel : GLabel
 	{
-		LuaTable _peerTable;
+        public LuaTable Lua;
 
-		[XLua.BlackList]
+        [XLua.BlackList]
 		public override void ConstructFromXML(XML xml)
 		{
 			base.ConstructFromXML(xml);
 
-			_peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
 		}
 
 		public override void Dispose()
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
 
 	public class GLuaButton : GButton
 	{
-		LuaTable _peerTable;
+        public LuaTable Lua;
 
-		[XLua.BlackList]
+        [XLua.BlackList]
 		public override void ConstructFromXML(XML xml)
 		{
 			base.ConstructFromXML(xml);
 
-			_peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
 		}
 
 		public override void Dispose()
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
 
 	public class GLuaProgressBar : GProgressBar
 	{
-		LuaTable _peerTable;
+        public LuaTable Lua;
 
-		[XLua.BlackList]
+        [XLua.BlackList]
 		public override void ConstructFromXML(XML xml)
 		{
 			base.ConstructFromXML(xml);
 
-			_peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
 		}
 
 		public override void Dispose()
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
 
 	public class GLuaSlider : GSlider
 	{
-		LuaTable _peerTable;
+        public LuaTable Lua;
 
-		[XLua.BlackList]
+        [XLua.BlackList]
 		public override void ConstructFromXML(XML xml)
 		{
 			base.ConstructFromXML(xml);
 
-			_peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
 		}
 
 		public override void Dispose()
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
 
 	public class GLuaComboBox : GComboBox
 	{
-		LuaTable _peerTable;
+        public LuaTable Lua;
 
-		[XLua.BlackList]
+        [XLua.BlackList]
 		public override void ConstructFromXML(XML xml)
 		{
 			base.ConstructFromXML(xml);
 
-			_peerTable = LuaUIHelper.ConnectLua(this);
+            Lua = LuaUIHelper.ConnectLua(this);
 		}
 
 		public override void Dispose()
 		{
 			base.Dispose();
 
-			if (_peerTable != null)
-				_peerTable.Dispose();
+			if (Lua != null)
+                Lua.Dispose();
 		}
 	}
     #region LuaLuaWindow

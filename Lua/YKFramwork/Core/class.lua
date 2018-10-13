@@ -28,7 +28,6 @@ function class(super,cstype)
                     local csuserdata = rawget(obj,"csuserdata")
                     if csuserdata then
                         local csObj = csuserdata[k]
-                        print(type(csObj).. k)
                         if csObj and type(csObj) == "function" then
                             local f = function(_, ...)
                                 return csObj(csuserdata, ...)

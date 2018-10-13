@@ -75,11 +75,16 @@ public class OpenLuaHelper : Editor
     {
 
         string luaFolderRoot = EditorUserSettings.GetConfigValue(LUA_PROJECT_ROOT_FOLDER_PATH_KEY);
+        if (string.IsNullOrEmpty(luaFolderRoot))
+        {
+            SetLuaProjectRoot();
+            luaFolderRoot = EditorUserSettings.GetConfigValue(LUA_PROJECT_ROOT_FOLDER_PATH_KEY);
+        }
         string filePath;
         int luaLine;
         string logText = GetLogText();
         string startIndex = "LuaException: ";
-        if (logText.IndexOf(startIndex) == -1)
+        if (string.IsNullOrEmpty(logText) || logText.IndexOf(startIndex) == -1)
         {
             return false;
         }
