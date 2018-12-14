@@ -72,7 +72,7 @@ public abstract class BaseUI : Window
         {
             throw new System.Exception("不存在包名："+this.PackName+ "/ResName="+ ResName);
         }
-
+	windObj.SetSize(GRoot.inst.width, GRoot.inst.height);
         this.contentPane = windObj.asCom;
         this.container.cachedTransform.position = Vector3.zero;
         this.container.cachedTransform.localScale = Vector3.one;
@@ -81,7 +81,6 @@ public abstract class BaseUI : Window
         {
             Debug.LogError("创建物体失败");
         }
-        this.contentPane.SetSize(GRoot.inst.width, GRoot.inst.height);
         
 
         var obj = this.contentPane.GetChild(BlackBgName);
